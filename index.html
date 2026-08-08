@@ -1,32 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Dra.Peixoto</title>
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina Dra. Peixoto</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=Tiny5&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <h1>Dra.peixoto</h1>
+      <h1 id="nomePersona">Dra. Peixoto</h1>
     </header>
     <section id="telaPrincipal">
+      <div id="janelaPersona">
+        <figure id="imagemfundo">
+          <img src="./imagens/cenário dra peixoto.gif" alt="cenario" />
+        </figure>
+        <figure id="drapeixoto">
+          <img src="./imagens/drapeixoto.gif" alt="drapeixoto" />
+        </figure>
+      </div>
 
-        <div id="janelaPersona">
-                <figure id="imagemfundo">
-                    <img src="./imagens/cenário dra peixoto.gif" alt="cenario">
-                </figure>
-                <figure id="drapeixoto">
-                    <img src="./imagens/drapeixoto.gif" alt="drapeixoto">
-                </figure>
+      <div id="dialogo">
+        <p id="falaPersona">
+          Bom dia, alunos! Me chamo Marilia Curie Peixoto, mas podem me chamar
+          de Dra Peixoto, serei a professora de Catemática de vocês. Desejo
+          boas-vindas a Gatec.
+        </p>
+        <div id="espaçoBotao">
+          <button class="botaousuario">(Começar)</button>
+          <button class="botaousuario">Reiniciar</button>
         </div>
-
-        <div id="falaPersona">
-            <p>falaPersona1</p>
-            <p>falaPersona2</p>
-            <button class="botaousuario">Iniciar</button>
-            <button class="botaousuario">Reiniciar</button>
-        </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>
