@@ -1,4 +1,7 @@
 /* Geral */
+head{
+    overflow: hidden;
+}
 body {
     min-height: 100vh;
 
@@ -20,7 +23,12 @@ header {
     margin: 2rem;
     flex-direction: column;
 }
-
+/*index, header audio*/
+#audio {
+    align-items: flex-end;
+    justify-content: end;
+    }
+/*emily mexendo, favor não tumultuar*/
 /* Index - Home */
 #home {
     width: 100%;
