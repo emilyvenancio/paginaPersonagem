@@ -1,8 +1,7 @@
 /* Geral */
-head{
-    overflow: hidden;
-}
 body {
+    overflow: hidden;
+    max-width: 100vw;
     min-height: 100vh;
 
     display: flex;
@@ -101,17 +100,20 @@ picture img {
 }
 
 #telaPrincipal {
+    margin: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 850px;
+    max-width:650px;
     position: relative;
 }
 
 #janelaPersona {
     position: relative;
     width: 100%;
+    max-width:100%;
+    min-width:100%;
 }
 
 #imagemfundo img {
@@ -123,6 +125,11 @@ picture img {
     border-color: rgba(240, 248, 255, 0.6);
 }
 
+#imagemfundo, #drapeixoto{
+    max-width: 100%;
+    min-width: 100%;
+    object-fit: contain;
+}
 #drapeixoto img {
     width: 30%;
     max-width: 250px;
@@ -139,6 +146,7 @@ picture img {
     display: flex;
     flex-direction: column;
     align-items: column;
+    max-width: 100%;
 }
 
 #falaPersona {
@@ -156,10 +164,12 @@ picture img {
     flex-direction: column;
     gap: 10px;
     align-items: center;
-    width: 100%;
+    width: 750px;
+    max-width: 100%;
 }
 
 .botaousuario {
+    max-width: 100%;
     width: 52rem;
     background-color: transparent;
     color: rgb(240, 248, 255);
