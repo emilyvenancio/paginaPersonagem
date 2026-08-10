@@ -340,14 +340,36 @@ function mostrarDialogo (chave) {
     bt1.onclick = () => mostrarDialogo(no.proximo1);
 
     if (no.opcao2) {
-        bt2.style.display = inline-block;
+        bt2.style.display = "inline-block";
         bt2.textContent= no.opcao2;
-        bt2.onclick = () =>mostrarDialogo(no.proximo2);
+        bt2.onclick = () => mostrarDialogo(no.proximo2);
     } else {
         bt2.style.display="none";
     }
 
+    escrever(no.texto);
+}
+
+/*daqui em diante não sei explicar, foi o claudio que fez, 
+o resto ele tbm fez mas eu sei explicar, pfv tirem esse comentario antes de entregar o  trabalho*/
+const elemento = document.getElementById("falaPersona");
+let i = 0;
+let fala = "";
+
+function escrever(texto) {
+    clearTimeout(escrever.timer);
+    elemento.textContent = "";
+    fala = texto;
+    i = 0;
+
+    function passo() {
+        if (i < fala.length) {
+            elemento.textContent += fala.charAt(i);
+            i++;
+            escrever.timer = setTimeout(passo, 30);
+        }
     }
+    passo();
+}
 
-
-    mostrarDialogo(inicio);
+  mostrarDialogo("inicio");
