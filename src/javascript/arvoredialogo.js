@@ -1,4 +1,53 @@
-//mano to aprendendo//
+function mostrarDialogo (chave) {
+    const no = dialogo [chave]; 
+    // dialogo[logica]
+    noAtual = chave;
+    // logica
+
+    // dialogo.inicio.texto -> abre dialogo -> pega inicio -> pega texto
+    document.getElementById("falaPersona").textContent = no.texto;
+
+    // vai no documento e pega o elemento pelo id de nome "X"
+    const bt1 = document.getElementById("bt1");
+    const bt2 = document.getElementById("bt2");
+
+    // dialogo.inicio.opção1 -> abre dialogo -> pega inicio -> pega opcao1
+    bt1.textContent = no.opcao1;
+    // quando bt1 apertado = mostrarDialogo(logica)
+    bt1.onclick = () => mostrarDialogo(no.proximo1);
+    
+    if (no.opcao2) {
+        bt2.style.display = "inline-block";
+        bt2.textContent= no.opcao2;
+        bt2.onclick = () => mostrarDialogo(no.proximo2);
+    } else {
+        bt2.style.display="none";
+    }
+
+    escrever(no.texto);
+}
+
+function escrever(texto) {
+    clearTimeout(escrever.timer);
+    elemento.textContent = "";
+    fala = texto; 
+    i = 0; 
+    // i é ponteiro, aponta para o local
+
+    function passo() {
+        if (i < fala.length) {
+          // pega o elemento, altera o conteudo de texto dele e adiciona 1 letra por vez
+            elemento.textContent += fala.charAt(i);
+            // pega fala, "abre ele" e pega o caracter que está armazenado na posição i
+            i++; 2
+            // atualiza ponteiro
+            escrever.timer = setTimeout(passo, 30);
+            // espera 30 ms para recomeçar o if
+        }
+    }
+    passo();
+}
+
 const dialogo = {
     inicio: {
         texto: "Bom dia, alunos! Me chamo Marilia Curie Peixoto, mas podem me chamar de Dra Peixoto, serei a professora de Catemática de vocês. Desejo boas-vindas a Gatec.",
@@ -326,50 +375,8 @@ const dialogo = {
 
 let noAtual = "inicio";
 
-function mostrarDialogo (chave) {
-    const no = dialogo [chave];
-    noAtual = chave;
-
-    document.getElementById("falaPersona").textContent =no.texto;
-
-
-    const bt1 = document.getElementById("bt1");
-    const bt2 = document.getElementById("bt2");
-
-    bt1.textContent = no.opcao1;
-    bt1.onclick = () => mostrarDialogo(no.proximo1);
-
-    if (no.opcao2) {
-        bt2.style.display = "inline-block";
-        bt2.textContent= no.opcao2;
-        bt2.onclick = () => mostrarDialogo(no.proximo2);
-    } else {
-        bt2.style.display="none";
-    }
-
-    escrever(no.texto);
-}
-
-/*daqui em diante não sei explicar, foi o claudio que fez, 
-o resto ele tbm fez mas eu sei explicar, pfv tirem esse comentario antes de entregar o  trabalho*/
 const elemento = document.getElementById("falaPersona");
 let i = 0;
 let fala = "";
 
-function escrever(texto) {
-    clearTimeout(escrever.timer);
-    elemento.textContent = "";
-    fala = texto;
-    i = 0;
-
-    function passo() {
-        if (i < fala.length) {
-            elemento.textContent += fala.charAt(i);
-            i++;
-            escrever.timer = setTimeout(passo, 30);
-        }
-    }
-    passo();
-}
-
-  mostrarDialogo("inicio");
+mostrarDialogo(noAtual);
