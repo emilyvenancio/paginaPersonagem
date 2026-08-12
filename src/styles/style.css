@@ -203,6 +203,16 @@ picture img {
     border-color: rgb(252, 252, 252);
 }
 
+#mrplutonio img{
+    width: 30%;
+    max-width: 250px;
+    min-width: 120px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-46%, -18%);
+}
+
 /* responsividade */
 /* tablets */
 @media (max-width: 1023px) {
