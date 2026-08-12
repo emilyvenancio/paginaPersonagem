@@ -95,7 +95,65 @@ picture img {
     border-color: rgb(252, 252, 252);
 }
 
-/* Personagem */
+/* Selecao Personagens */
+#tituloSelectPers {
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+    top: 0%;
+    font-family: "Bitcount", system-ui;
+    font-size: 2rem;
+}
+
+#selecPersonas {
+    display: inline-flex;
+}
+
+.escolhaPersona,
+.linkEscolha {
+    width: 50vw;
+    max-width: 850px;
+    height: 30vw;
+    min-height: 650px;
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+}
+
+#botaoComLinha {
+    border-left: .25rem dashed rgba(240, 248, 255, 0.6);
+}
+
+.formatPersona {
+    opacity: 30%;
+    transition: 0.3s;
+}
+
+.formatPersona:hover {
+    opacity: 100%;
+    transform: scale(1.1);
+}
+
+.imagemSelec {
+    height: 25rem;
+    max-width: 400px;
+    border: 0.2rem solid rgb(0, 5, 61);
+    margin-bottom: 1rem;
+}
+
+.dadosPersona {
+    color: rgb(240, 248, 255);
+    font-size: 1.3rem;
+    font-family: "Tiny5", sans-serif;
+    letter-spacing: 0.1rem;
+    line-height: 2rem
+}
+
+.tituloInfo {
+    text-align: justify;
+    font-weight: bold;
+}
+
+/* Personagens */
 #nomePersona {
     font-size: 2.8rem;
     font-family: "Bitcount", system-ui;
@@ -203,7 +261,7 @@ picture img {
     border-color: rgb(252, 252, 252);
 }
 
-#mrplutonio img{
+#mrplutonio img {
     width: 30%;
     max-width: 250px;
     min-width: 120px;
@@ -216,6 +274,34 @@ picture img {
 /* responsividade */
 /* tablets */
 @media (max-width: 1023px) {
+
+
+    #tituloSelectPers {
+        font-size: 2.3rem;
+    }
+
+    #selecPersonas {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .escolhaPersona,
+    .linkEscolha {
+        width: 100%;
+        max-width: 450px;
+        min-height: auto;
+    }
+
+    .imagemSelec {
+        max-width: 300px;
+    }
+
+    .dadosPersona {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
     #telaPrincipal {
         width: 90%;
     }
@@ -247,6 +333,53 @@ picture img {
 @media (max-width: 767px) {
     header {
         margin: 20px;
+    }
+
+    #tituloSelectPers {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #selecPersonas {
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 2rem;
+    }
+
+    .escolhaPersona,
+    .linkEscolha {
+
+        width: 95%;
+
+        max-width: 400px;
+    }
+
+    .imagemSelec {
+
+        width: 100%;
+
+        max-width: 250px;
+    }
+
+    .dadosPersona {
+
+        font-size: 1rem;
+
+        line-height: 1.8rem;
+    }
+
+    #botaoComLinha {
+
+        border-left: none;
+
+        border-top: .25rem dashed rgba(240, 248, 255, .6);
+
+        padding-top: 2rem;
     }
 
     #telaPrincipal {
@@ -288,6 +421,20 @@ picture img {
 
 /* telas ainda menores */
 @media (max-width: 480px) {
+
+    #tituloSelectPers {
+        font-size: 1.7rem;
+    }
+
+    .imagemSelec {
+        max-width: 180px;
+    }
+
+    .dadosPersona {
+        font-size: .9rem;
+        line-height: 1.5rem;
+    }
+
     #nomePersona {
         font-size: 24px;
     }
