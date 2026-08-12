@@ -22,11 +22,13 @@ header {
     margin: 2rem;
     flex-direction: column;
 }
+
 /*index, header audio*/
 #audio {
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: end;
-    }
+}
+
 /*emily mexendo, favor não tumultuar*/
 /* Index - Home */
 #home {
@@ -105,15 +107,15 @@ picture img {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width:650px;
+    max-width: 650px;
     position: relative;
 }
 
 #janelaPersona {
     position: relative;
     width: 100%;
-    max-width:100%;
-    min-width:100%;
+    max-width: 100%;
+    min-width: 100%;
 }
 
 #imagemfundo img {
@@ -125,11 +127,13 @@ picture img {
     border-color: rgba(240, 248, 255, 0.6);
 }
 
-#imagemfundo, #drapeixoto{
+#imagemfundo,
+#drapeixoto {
     max-width: 100%;
     min-width: 100%;
     object-fit: contain;
 }
+
 #drapeixoto img {
     width: 30%;
     max-width: 250px;
@@ -163,7 +167,7 @@ picture img {
 }
 
 #espaçoBotao {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;

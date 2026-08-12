@@ -5,7 +5,7 @@ function mostrarDialogo (chave) {
     // logica
 
     // dialogo.inicio.texto -> abre dialogo -> pega inicio -> pega texto
-    document.getElementById("falaPersona").textContent = no.texto;
+    elemento.textContent = no.texto;
 
     // vai no documento e pega o elemento pelo id de nome "X"
     const bt1 = document.getElementById("bt1");
@@ -39,7 +39,7 @@ function escrever(texto) {
           // pega o elemento, altera o conteudo de texto dele e adiciona 1 letra por vez
             elemento.textContent += fala.charAt(i);
             // pega fala, "abre ele" e pega o caracter que está armazenado na posição i
-            i++; 2
+            i++; 
             // atualiza ponteiro
             escrever.timer = setTimeout(passo, 30);
             // espera 30 ms para recomeçar o if
@@ -373,10 +373,8 @@ const dialogo = {
 
 }
 
-let noAtual = "inicio";
-
 const elemento = document.getElementById("falaPersona");
 let i = 0;
 let fala = "";
 
-mostrarDialogo(noAtual);
+mostrarDialogo("inicio");
