@@ -1,3 +1,43 @@
+/* Fonte 2 - generica demais*/
+/* @font-face {
+    font-family: 'Pixel3';
+    src: url('../fonts/pixel_3/pixel.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+
+/* modern_dos */
+/* @font-face {
+    font-family: "DOS";
+    src: url("../fonts/modern_dos/ModernDOS9x16.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+/* Nokia */
+/* @font-face {
+    font-family: "Nokia";
+    src: url("../fonts/nokia_cellphone/nokiafc22.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+/* PixelOper (com bold) */
+@font-face {
+    font-family: "PixelOper";
+    src: url('../fonts/pixel_operator/PixelOperator8.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PixelOper";
+    src: url('../fonts/pixel_operator/PixelOperator8-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
 /* Geral */
 body {
     overflow-y: hidden;
@@ -9,7 +49,7 @@ body {
     align-items: center;
 
     background-color: rgb(0, 2, 26);
-    font-family: "Tiny5", sans-serif;
+    font-family: "PixelOper", sans-serif;
     color: rgb(240, 248, 255);
 }
 
@@ -19,7 +59,7 @@ header {
     height: auto;
     display: flex;
     align-items: center;
-    margin: 2rem;
+    margin: 0.8rem;
     flex-direction: column;
 }
 
@@ -95,7 +135,65 @@ picture img {
     border-color: rgb(252, 252, 252);
 }
 
-/* Personagem */
+/* Selecao Personagens */
+#tituloSelectPers {
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+    top: 0%;
+    font-family: "Bitcount", system-ui;
+    font-size: 2rem;
+}
+
+#selecPersonas {
+    display: inline-flex;
+}
+
+.escolhaPersona,
+.linkEscolha {
+    width: 50vw;
+    max-width: 850px;
+    height: 30vw;
+    min-height: 650px;
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+}
+
+#botaoComLinha {
+    border-left: .25rem dashed rgba(240, 248, 255, 0.6);
+}
+
+.formatPersona {
+    opacity: 30%;
+    transition: 0.3s;
+}
+
+.formatPersona:hover {
+    opacity: 100%;
+    transform: scale(1.1);
+}
+
+.imagemSelec {
+    height: 25rem;
+    max-width: 400px;
+    border: 0.2rem solid rgb(0, 5, 61);
+    margin-bottom: 1rem;
+}
+
+.dadosPersona {
+    color: rgb(240, 248, 255);
+    font-size: 0.8rem;
+    font-family: "PixelOper", sans-serif;
+    font-weight: 400;
+    /* letter-spacing: 0.1rem; */
+    line-height: 1.7rem
+}
+
+.tituloInfo {
+    font-weight: 700;
+}
+
+/* Personagens */
 #nomePersona {
     font-size: 2.8rem;
     font-family: "Bitcount", system-ui;
@@ -145,7 +243,7 @@ picture img {
 }
 
 #caixadialogo {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 #dialogo {
@@ -159,8 +257,7 @@ picture img {
 #falaPersona {
     margin: 0.5rem;
     text-align: center;
-    letter-spacing: 1px;
-    line-height: 1.8;
+    line-height: 2.3rem;
 
     width: 100%;
     min-height: 8rem;
@@ -180,9 +277,9 @@ picture img {
     width: 52rem;
     background-color: transparent;
     color: rgb(240, 248, 255);
-    letter-spacing: 1px;
-    font-family: "Tiny5", sans-serif;
-    font-size: 1.25rem;
+    /* letter-spacing: 1px; */
+    font-family: "PixelOper", sans-serif;
+    font-size: 1.2rem;
     border-radius: 8px;
     border-color: rgb(240, 248, 255);
     border-style: solid;
@@ -203,7 +300,7 @@ picture img {
     border-color: rgb(252, 252, 252);
 }
 
-#mrplutonio img{
+#mrplutonio img {
     width: 30%;
     max-width: 250px;
     min-width: 120px;
@@ -216,6 +313,32 @@ picture img {
 /* responsividade */
 /* tablets */
 @media (max-width: 1023px) {
+    #tituloSelectPers {
+        font-size: 2.3rem;
+    }
+
+    #selecPersonas {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .escolhaPersona,
+    .linkEscolha {
+        width: 100%;
+        max-width: 450px;
+        min-height: auto;
+    }
+
+    .imagemSelec {
+        max-width: 300px;
+    }
+
+    .dadosPersona {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
     #telaPrincipal {
         width: 90%;
     }
@@ -247,6 +370,53 @@ picture img {
 @media (max-width: 767px) {
     header {
         margin: 20px;
+    }
+
+    #tituloSelectPers {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #selecPersonas {
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 2rem;
+    }
+
+    .escolhaPersona,
+    .linkEscolha {
+
+        width: 95%;
+
+        max-width: 400px;
+    }
+
+    .imagemSelec {
+
+        width: 100%;
+
+        max-width: 250px;
+    }
+
+    .dadosPersona {
+
+        font-size: 1rem;
+
+        line-height: 1.8rem;
+    }
+
+    #botaoComLinha {
+
+        border-left: none;
+
+        border-top: .25rem dashed rgba(240, 248, 255, .6);
+
+        padding-top: 2rem;
     }
 
     #telaPrincipal {
@@ -288,6 +458,20 @@ picture img {
 
 /* telas ainda menores */
 @media (max-width: 480px) {
+
+    #tituloSelectPers {
+        font-size: 1.7rem;
+    }
+
+    .imagemSelec {
+        max-width: 180px;
+    }
+
+    .dadosPersona {
+        font-size: .9rem;
+        line-height: 1.5rem;
+    }
+
     #nomePersona {
         font-size: 24px;
     }
