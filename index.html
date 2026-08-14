@@ -15,24 +15,24 @@
   </head>
   <body>
     <section id="home">
+      <div>
+          <audio id="audio" preload="metadata" autoplay loop="true">
+            <source src="./src/music/Boomin.music.mp3" type="audio/mpeg" />
+            <source src="./src/music/Boomin.music.ogg" type="audio/ogg" />
+            <source src="./src/music/Boomin.music.wav" type="audio/wav" />
+            <p>Seu navegador não suporta audio :/</p>
+          </audio>
+          <button id="botaoAudio"> <img id=iconMute src="./src/img/opcoes audio/AudioMute3.png" alt="Ligar audio"></button>
+      </div>
+      
       <picture>
         <source media="(max-width:767px)" srcset="src/imagens/homecel.png" />
         <img src="src/img/home.png" alt="Tela inicial" />
       </picture>
-      <a href="draPeixoto.html">
-        <a href="selecaoPersona.html">
-          <button id="botaoHome">Começar</button>
-        </a>
+      <a href="selecaoPersona.html">
+        <button id="botaoHome">Começar</button>
       </a>
     </section>
-    <!--emily vai arrumar-->
-    <section id="audio">
-      <audio controls id="audio" preload="metadata" autoplay loop="true">
-        <source src="src/music/Boomin.music.mp3" type="audio/mpeg" />
-        <source src="src/music/Boomin.music.ogg" type="audio/ogg" />
-        <source src="src/music/Boomin.music.wav" type="audio/wav" />
-        <p>Seu navegador não suporta audio :/</p>
-      </audio>
-    </section>
+    <script src="./src/javascript/index.js"></script>
   </body>
 </html>

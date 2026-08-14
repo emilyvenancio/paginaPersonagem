@@ -40,7 +40,7 @@
 
 /* Geral */
 body {
-    overflow: hidden;
+    overflow-y: hidden;
     max-width: 100vw;
     min-height: 100vh;
 
@@ -64,16 +64,33 @@ header {
 }
 
 /*index, header audio*/
-#audio {
-    align-items: flex-start;
-    justify-content: end;
+#botaoAudio {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    width: 64px;
+    height: 64px;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    cursor: pointer;
+    
+}
+#botaoAudio img {
+    max-width: 100%;
+    max-height: 100%;
+
 }
 
 /*emily mexendo, favor não tumultuar*/
 /* Index - Home */
 #home {
+    position: relative;
     width: 100%;
     height: 100vh;
+    z-index: 1;
 
     display: flex;
     justify-content: center;
