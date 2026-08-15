@@ -50,7 +50,7 @@ function escrever(texto) {
 
 const dialogo = {
     inicio: {
-        texto: "Bom dia, nobres colegas! Eu sou o Mr. Plutônio, e sim, antes que perguntem, aquele Plutônio, das Indústrias Plutônio. Vim pessoalmente, o que já demonstra a seriedade desta proposta. Poderiam ao menos fingir surpresa.",
+        texto: "Bom dia, nobres colegas! Eu sou o Mr. Plutônio, e sim, antes que perguntem, aquele Plutônio, das Indústrias Plutônio. Vimpessoalmente, o que já demonstra a seriedade desta proposta. Poderiam ao menos fingir surpresa.",
         opcao1: "Próximo",
         proximo1: "conceito1",
         opcao2: null,
@@ -74,7 +74,7 @@ const dialogo = {
     },
 
     conceito3: {
-        texto: "O que não podemos julgar como verdadeiro ou falso não é proposição: perguntas, ordens, pedidos, exclamações, sentenças abertas, desejos ou opiniões. Uma proposta vaga, sem números fechados, é exatamente isso, inútil tanto na lógica quanto nos negócios.",
+        texto: "O que não pode ser julgado como verdadeiro ou falso não é proposição: perguntas, ordens, desejos e opiniões ficam de fora. Uma proposta vaga, sem números fechados, é exatamente isso, inútil tanto na lógica quanto nos negócios. ",
         opcao1: "Entendi!",
         proximo1: "resposta1a",
         opcao2: "Se negócio com números é difícil, então negócio com escola pública é impossível",
@@ -146,7 +146,15 @@ const dialogo = {
     },
 
     conjuncaoIntro: {
-        texto: "Proposições isoladas são úteis, mas o verdadeiro poder está em conectá-las, assim como se controla contratos e pessoas. O primeiro conectivo que o senhor precisa dominar é a conjunção, representada pelo símbolo ∧, que significa \"e\". Quando escrevemos A ∧ B, lemos \"A e B\". A ∧ B só é considerada verdadeira quando A é verdadeira e B também é verdadeira.",
+        texto: "Proposições isoladas são úteis, mas o verdadeiro poder está em conectá-las, assim como se controla contratos e pessoas. O primeiro conectivo que o senhor precisa dominar é a conjunção, representada pelo símbolo ∧, que significa \"e\".",
+        opcao1: "Próximo",
+        proximo1: "conjuncaoIntro2",
+        opcao2: null,
+        proximo2: null,
+    },
+
+    conjuncaoIntro2: {
+        texto: "Quando escrevemos A ∧ B, lemos \“A e B\”, além disso será considerada verdadeira quando A é verdadeira e B também é verdadeira.",
         opcao1: "Dê um exemplo",
         proximo1: "conjuncaoExemplo",
         opcao2: null,
@@ -178,7 +186,15 @@ const dialogo = {
     },
 
     disjuncaoIntro: {
-        texto: "Mas existe outro conectivo muito usado em negociações: a disjunção. Ela é representada pelo símbolo V e corresponde à palavra \"ou\". Quando escrevemos A V B, lemos \"A ou B\". Nela, basta que uma das proposições seja verdadeira para que a expressão inteira seja verdadeira.",
+        texto: "Mas existe outro conectivo muito usado em negociações: a disjunção. Ela é representada pelo símbolo V e corresponde à palavra \"ou\". Quando escrevemos A V B, lemos \"A ou B\".",
+        opcao1: "Próximo",
+        proximo1: "disjuncaoIntro2",
+        opcao2: null,
+        proximo2: null,
+    },
+
+    disjuncaoIntro2: {
+        texto: "Nela, basta que uma das proposições seja verdadeira para que a expressão inteira seja verdadeira.",
         opcao1: "Me explique melhor",
         proximo1: "disjuncaoExemplo",
         opcao2: null,
@@ -218,7 +234,15 @@ const dialogo = {
     },
 
     condicionalIntro: {
-        texto: "Agora vamos falar de outro conectivo muito útil para quem faz acordos: a condicional. Ela é representada por → e significa \"se... então...\". Quando escrevemos A → B, lemos: \"Se A, então B.\" Sempre que a primeira proposição for verdadeira, a segunda também deve ser verdadeira. Se a promessa foi feita, ela precisa ser cumprida.",
+        texto: "Agora vamos falar de outro conectivo muito útil para quem faz acordos: a condicional. Ela é representada por → e significa \"se... então...\". Quando escrevemos A → B, lemos: \"Se A, então B.\"",
+        opcao1: "Próximo",
+        proximo1: "condicionalIntro2",
+        opcao2: null,
+        proximo2: null,
+    },
+
+    condicionalIntro2: {
+        texto: "Sempre que a primeira proposição for verdadeira, a segunda também deve ser verdadeira. Se a promessa foi feita, ela precisa ser cumprida.",
         opcao1: "Me explique melhor",
         proximo1: "condicionalExemplo",
         opcao2: null,
@@ -300,7 +324,7 @@ const dialogo = {
     despedida: {
         texto: "Agradeça votando a favor da minha empresa, colega. Nos vemos na próxima sessão, ou nos corredores, se me permitirem circular por eles. Até mais!",
         opcao1: "RETURN",
-        proximo1: null,
+        proximo1: "inicio",
         opcao2: null,
         proximo2: null,
     },
