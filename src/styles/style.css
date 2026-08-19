@@ -154,21 +154,25 @@ picture img {
 
 /* Selecao Personagens */
 #tituloSelectPers {
-    margin-top: 0.5%;
-    margin-bottom: 1%;
-    top: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: "Bitcount", system-ui;
-    font-size: 2rem;
+    font-size: 50px;
 }
 
 #selecPersonas {
+    height: 30%;
+    width: 100%;
     display: inline-flex;
+    position: relative;
+
 }
 
 .escolhaPersona,
 .linkEscolha {
     width: 50vw;
-    max-width: 850px;
+    max-width: 750px;
     height: 30vw;
     min-height: 650px;
     background-color: transparent;
@@ -177,7 +181,7 @@ picture img {
 }
 
 #botaoComLinha {
-    border-left: .25rem dashed rgba(240, 248, 255, 0.6);
+    border-left: .30rem dashed rgba(240, 248, 255, 0.6);
 }
 
 .formatPersona {
@@ -199,11 +203,12 @@ picture img {
 
 .dadosPersona {
     color: rgb(240, 248, 255);
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-family: "PixelOper", sans-serif;
     font-weight: 400;
     /* letter-spacing: 0.1rem; */
     line-height: 1.7rem
+    
 }
 
 .tituloInfo {

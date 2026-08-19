@@ -14,8 +14,21 @@
     />
   </head>
   <body>
-    <h1 id="tituloSelectPers">Selecione seu Professor:</h1>
-    <div id="selecPersonas">
+    <div>
+          <audio id="audio" preload="metadata" loop="true">
+            <source src="./src/music/HallofProofs.mp3" type="audio/mp3" />
+            <source src="./src/music/HallofProofs.ogg" type="audio/ogg" />
+            <source src="./src/music/HallofProofs.wav" type="audio/wav" />
+            <p>Seu navegador não suporta audio :/</p>
+          </audio>
+          <button id="botaoAudio"> <img id=iconMute src="./src/img/opcoes audio/AudioMute3.png" alt="Ligar audio"></button>
+    </div>
+
+    <header id="headerescolha">
+      <h1 id="tituloSelectPers">Selecione seu Professor:</h1>
+    </header>
+   
+    <main id="selecPersonas">
       <button class="escolhaPersona">
         <a class="linkEscolha" href="draPeixoto.html">
           <div class="formatPersona">
@@ -24,26 +37,27 @@
               src="src/img/DraPeixoto.jpeg"
               alt="Ilustração da Doutora Peixoto"
             />
-            <h2 class="dadosPersona">
-              <span class="tituloInfo">Nome: </span>(Dra.) Marília Curie Peixoto
-            </h2>
-            <h2 class="dadosPersona">
-              <span class="tituloInfo">Sobre: </span>Professora de Catemática na
+            <div class="dadosPersona tituloInfo">
+              <p><span class="tituloInfo">Nome: </span>(Dra.) Marília Curie Peixoto
+              </p>
+
+              <p><span class="tituloInfo">Sobre: </span>Professora de Catemática na
               Gatec
-            </h2>
-            <h2 class="dadosPersona">
-              <span class="tituloInfo">Tom: </span>Amigável e prestativa, mas
+              </p>
+            
+              <p><span class="tituloInfo">Tom: </span>Amigável e prestativa, mas
               rígida
-            </h2>
-            <h2 class="dadosPersona">
-              <span class="tituloInfo">Comida favorita: </span>Churu de peixe
-            </h2>
-            <h2 class="dadosPersona">
-              <span class="tituloInfo">Odeia: </span>Água e Ratos
-            </h2>
+              </p>
+
+              <p><span class="tituloInfo">Comida favorita: </span>Churu de peixe
+              </p>
+      
+              <p><span class="tituloInfo">Odeia: </span>Água e Ratos
+            </p>
           </div>
         </a>
       </button>
+
       <button id="botaoComLinha" class="escolhaPersona">
         <a class="linkEscolha" href="mrPlutonio.html">
           <div class="formatPersona">
@@ -52,27 +66,29 @@
               src="src/img/MrPlutonio.jpeg"
               alt="Ilustração do Mister Plutonio"
             />
-            <h2 class="dadosPersona">
-              <span class="tituloInfo">Nome: </span>(Mister) Stuart Smith Bueno
+            <div class="dadosPersona tituloInfo">
+              <p><span>Nome: </span>(Mister) Stuart Smith Bueno
               Plutônio
-            </h2>
-            <h2 class="dadosPersona">
-              <span class="tituloInfo">Sobre: </span>Magnata herdeiro das
+              </p>
+
+              <p><span>Sobre: </span>Magnata herdeiro das
               Industrias Plutônio
-            </h2>
-            <h2 class="dadosPersona">
-              <span class="tituloInfo">Tom: </span>Esnobe, sério e ganancioso
-            </h2>
-            <h2 class="dadosPersona">
-              <span class="tituloInfo">Comida favorita: </span>Queijo azul
+              </p>
+
+              <p><span>Tom: </span>Esnobe, sério e ganancioso
+              </p>
+
+            <p><span>Comida favorita: </span>Queijo azul
               Cabrales e Whiskey The Macallan
-            </h2>
-            <h2 class="dadosPersona">
-              <span class="tituloInfo">Odeia: </span>Ratouille
-            </h2>
+            </p>
+            <p><span class="tituloInfo">Odeia: </span>Ratatouille
+            </p>
           </div>
         </a>
       </button>
-    </div>
+    </main>
+
+    <script src="./src/javascript/index.js"> 
+    </script>
   </body>
 </html>
