@@ -67,7 +67,7 @@ function escrever(texto) {
 
 const dialogo = {
     inicio: {
-        texto: "Bom dia, nobres colegas! Eu sou o Mr. Plutônio, e sim, antes que perguntem, aquele Plutônio, das Indústrias Plutônio. Vimpessoalmente, o que já demonstra a seriedade desta proposta. Poderiam ao menos fingir surpresa.",
+        texto: "Bom dia, nobres colegas! Eu sou o Mr. Plutônio, e sim, antes que perguntem, aquele Plutônio, das Indústrias Plutônio. Vim pessoalmente, o que já demonstra a seriedade desta proposta. Poderiam ao menos fingir surpresa.",
         opcao1: "Próximo",
         proximo1: "conceito1",
         opcao2: null,
@@ -76,7 +76,7 @@ const dialogo = {
 
   conceito1: {
     texto:
-      "Antes de falarmos de privatização, preciso que dominem um conceito básico, do contrário nossa negociação vai por água abaixo: proposição. Prestem atenção, porque não repito duas vezes, ou melhor, repito, mas cobro juros.",
+      "Antes de falarmos de privatização, preciso que dominem um conceito básico, do contrário, nossa negociação vai por água abaixo: proposição. Prestem atenção, porque não repito duas vezes, ou melhor, repito, mas cobro juros.",
     opcao1: "Próximo",
     proximo1: "conceito2",
     opcao2: null,
@@ -93,7 +93,7 @@ const dialogo = {
   },
 
     conceito3: {
-        texto: "O que não pode ser julgado como verdadeiro ou falso não é proposição: perguntas, ordens, desejos e opiniões ficam de fora. Uma proposta vaga, sem números fechados, é exatamente isso, inútil tanto na lógica quanto nos negócios. ",
+        texto: "O que não pode ser julgado como verdadeiro ou falso não é proposição: perguntas, ordens, desejos e opiniões ficam de fora. Uma proposta vaga, sem números fechados, é exatamente isso: inútil tanto na lógica quanto nos negócios. ",
         opcao1: "Entendi!",
         proximo1: "resposta1a",
         opcao2: "Se negócio com números é difícil, então negócio com escola pública é impossível",
@@ -146,7 +146,7 @@ const dialogo = {
 
   pergunta2: {
     texto: 'Agora, "A escola é pública e isso será vendido", é uma proposição?',
-    opcao1: "Com certeza! é proposição",
+    opcao1: "Com certeza! É proposição",
     proximo1: "pergunta2Errado",
     opcao2: "A frase não é proposição e a escola é pública!",
     proximo2: "pergunta2Certo",
@@ -171,7 +171,7 @@ const dialogo = {
   },
 
     conjuncaoIntro: {
-        texto: "Proposições isoladas são úteis, mas o verdadeiro poder está em conectá-las, assim como se controla contratos e pessoas. O primeiro conectivo que o senhor precisa dominar é a conjunção, representada pelo símbolo ∧, que significa \"e\".",
+        texto: "Proposições isoladas são úteis, mas o verdadeiro poder está em conectá-las, assim como se controlam contratos e pessoas. O primeiro conectivo que o senhor precisa dominar é a conjunção, representada pelo símbolo ∧, que significa \"e\".",
         opcao1: "Próximo",
         proximo1: "conjuncaoIntro2",
         opcao2: null,
@@ -179,7 +179,7 @@ const dialogo = {
     },
 
     conjuncaoIntro2: {
-        texto: "Quando escrevemos A ∧ B, lemos \“A e B\”, além disso será considerada verdadeira quando A é verdadeira e B também é verdadeira.",
+        texto: "Quando escrevemos A ∧ B, lemos \“A e B\”. A conjunção será verdadeira quando A é verdadeira e B também é verdadeira.",
         opcao1: "Dê um exemplo",
         proximo1: "conjuncaoExemplo",
         opcao2: null,
@@ -197,7 +197,7 @@ const dialogo = {
 
   conjuncaoErrado: {
     texto:
-      "Errado, se uma preposição é falsa, a conjunção inteira também será. Vejo que o senhor não é um investidor muito competente….",
+      "Errado, se uma proposição é falsa, a conjunção inteira também será. Vejo que o senhor não é um investidor muito competente…",
     opcao1: "Próximo",
     proximo1: "disjuncaoIntro",
     opcao2: null,
@@ -231,7 +231,7 @@ const dialogo = {
 
   disjuncaoExemplo: {
     texto:
-      "O governo OU a iniciativa privada financiará o projeto. Imagine que apenas a iniciativa privada financie o projeto, essa disjunção seria:",
+      "O governo OU a iniciativa privada financiará o projeto. Imagine que apenas a iniciativa privada financie o projeto. Essa disjunção seria:",
     opcao1: "Verdadeira",
     proximo1: "disjuncaoCerto",
     opcao2: "Falsa",
@@ -239,7 +239,7 @@ const dialogo = {
   },
 
   disjuncaoCerto: {
-    texto: "Correto, só é necessário uma proposição ser verdadeira.",
+    texto: "Correto, só é necessário que uma proposição ser verdadeira.",
     opcao1: "E se o governo e a iniciativa privada financiassem o projeto?",
     proximo1: "disjuncaoAmbos",
     opcao2: null,
@@ -248,7 +248,7 @@ const dialogo = {
 
   disjuncaoErrado: {
     texto:
-      "Errado, apenas uma proposição ser verdadeira já basta para a disjunção ser verdadeira.",
+      "Errado, apenas uma proposição seja verdadeira para que a disjunção também seja verdadeira.",
     opcao1: "E se o governo e a iniciativa privada financiassem o projeto?",
     proximo1: "disjuncaoAmbos",
     opcao2: null,
@@ -257,7 +257,7 @@ const dialogo = {
 
   disjuncaoAmbos: {
     texto:
-      "Se as duas forem verdadeiras ao mesmo tempo, a disjunção também continua sendo verdadeira. Mas seria meio irrealista pensar que dessa vez o governo ficaria do nosso lado…",
+      "Se as duas forem verdadeiras ao mesmo tempo, a disjunção continua sendo verdadeira. Mas seria meio irrealista pensar que dessa vez o governo ficaria do nosso lado…",
     opcao1: "Próximo",
     proximo1: "condicionalIntro",
     opcao2: null,
@@ -282,7 +282,7 @@ const dialogo = {
 
   condicionalExemplo: {
     texto:
-      "Se o contrato for assinado, então o investimento será liberado. Imagine que o contrato foi assinado, mas o investimento não foi liberado. Essa condição seria:",
+      "Se o contrato for assinado, então o investimento será liberado. Imagine que o contrato foi assinado, mas o investimento não foi liberado. Essa proposição seria:",
     opcao1: "Verdadeira",
     proximo1: "condicionalErrado",
     opcao2: "Falsa",
